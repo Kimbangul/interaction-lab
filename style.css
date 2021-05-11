@@ -30,12 +30,12 @@
 }
 
 html,body{
-    height: 100%;
-    background-color: #FFCD5A;
+    height: 100%;   
     font-family: 'MaplestoryOTFLight', 'MaplestoryOTFBold', 'Open Sans', 'Noto Sans KR', sans-serif ;
     color: #513535;
     font-size: 10px;
     overflow-x: hidden;
+    background-color: #FFCD5A;
 }
 
 a,img{
@@ -137,6 +137,67 @@ a,img{
 .flex-d-c{
     flex-direction: column;
 }
+
+
+
+.outline-yellow{
+    border: 25px solid #FFCD5A;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.relative{
+    position: relative;
+}
+
+.section-title{
+    font-size: 5rem;    
+}
+
+.section-title:not(.underline){
+    position: relative;
+    z-index: 1;
+}
+
+.step-count{
+    font-size: 3rem;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+}
+
+.underline{
+    position: relative;
+    z-index: 1;
+}
+
+.underline::before{
+    position: absolute;
+    content: "";
+    display: block;
+    clear:both;
+    width: 102%;
+    height: 24px;
+    background: #fff;
+    border-radius: 12px;
+    top: 80%;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.big{
+    font-size: 1.2em;
+}
+
+.line-deco{
+    width: 30px;
+    height: 2px;
+    background-color: rgba(81,53,53,0.5);
+    display: block;
+    transform: rotateZ(-45deg);
+}
+
 
 /* cus */
 
@@ -260,6 +321,7 @@ header > .con >  .sns-menu > li:last-child > a{
     background-position: center;
     background-size: cover;
     position: relative;
+    
 }
 
 #main .con > .egg{
@@ -345,8 +407,85 @@ header > .con >  .sns-menu > li:last-child > a{
 
 /* main end */
 /* step 1  start*/
+#step-1{
+    margin-top: 120px;
+     padding: 120px 0; 
+    position: relative;
+    overflow-y:visible;
+    /* padding: 50px 0 50px 0; */
+    background-color: #FFE48B;
+   
+   
+}
+
+#step-1::before, #step-1::after{
+    position: absolute;
+    content: "";
+    left: 0;  
+    width: 100%; 
+    height:28%;
+    background-repeat: repeat-x;
+    background-size: 100% auto;   
+    background-position:bottom center;
+    z-index: 1; 
+}
+
+#step-1::before{
+    /* bg deco bottom */
+
+    bottom: 100%;
+    background-image: url('img/bg-step1-top.png');
+   
+
+}
+
+#step-1::after{
+    /* bg deco bottom */
+    top: 100%;
+    background-image: url('img/bg-step1-top.png');
+    transform: rotate(180deg);   
+   
+
+}
+
+#step-1 .con > .img-wrap > .img-box{
+    max-width: 550px;    
+}
+
+#step-1 .con > .img-wrap > .metamong{
+    position: absolute;
+    left: -15%;
+    bottom: -15%;
+
+}
+
+#step-1 .con > .img-wrap > .deco{
+    position: absolute;
+    right: -80px;
+    top: 85%;
+
+}
+
+#step-1 .con > .text-box{
+    margin-right: 120px;
+}
+
+#step-1 .con > .text-box > .line-deco{
+    margin: 40px auto;
+}
+
+#step-1 .con > .text-box > .text-content{
+    font-size: 1.6em;
+    line-height: 2em;
+}
+
 
 
 /* step 1 end */
+/* step 2 start */
+section#step-2{
+    background-color: #FCF5DF;
+}
+/* step 2 end */
 
 /* section end */
