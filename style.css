@@ -150,8 +150,12 @@ a,img{
     position: relative;
 }
 
+.title-box{
+    z-index: 5;
+}
+
 .section-title{
-    font-size: 5rem;    
+    font-size: 4.5rem;    
 }
 
 .section-title:not(.underline){
@@ -160,7 +164,7 @@ a,img{
 }
 
 .step-count{
-    font-size: 3rem;
+    font-size: 2.5rem;
     position: absolute;
     left: 0;
     bottom: 100%;
@@ -200,6 +204,16 @@ a,img{
 
 
 /* cus */
+/* slick slide */
+.slick-track
+{
+    display: flex !important;
+}
+
+.slick-slide
+{
+    height: inherit !important;
+}
 
 /* header start */
 header{   
@@ -491,11 +505,103 @@ header > .con >  .sns-menu > li:last-child > a{
     background-color: #FFCD5A;
 }
 
+#step-2 .con > .title-box{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#step-2 .con > .title-box > .step-count{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#step-2 .con > .card-slide{
+   padding: 0 50px;
+}
 #step-2 .con > .card-slide .card{
-    max-width: 33%;
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 75.8%;
+    margin: 0 5px;
+    opacity: 0.5;    
+    padding: 25px 0;
+    transform: scale(0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, opacity 0.3s;
+    overflow:visible;
+    
+  
+}
+
+#step-2 .con > .card-slide .card.slick-active{
+    opacity: 1;
+    transform: scale(0.92);
+}
+
+#step-2 .con > .card-slide .card > img{
+
+    width: 80%;
+    
+}
+
+#step-2 .con > .card-slide .card > img[alt="pokedex"]{
+    transform: translateY(10px);
+}
+
+#step-2 .con > .card-slide .card > .card-num{
+    font-size: 5em;
+    font-family: 'MaplestoryOTFBold', sans-serif;
+    position: absolute;
+    top: -2.5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 6;
+}
+
+#step-2 .con > .card-slide .slick-arrow::before{
+    content: "";
+
+}
+
+#step-2 .con > .card-slide .slick-arrow.slick-prev, #step-2 .con > .card-slide .slick-arrow.slick-next{
+    width: auto;
+    height: auto;
+}
+
+#step-2 .con > .card-slide .slick-arrow.slick-prev{
+    left: 0px;
+}
+
+#step-2 .con > .card-slide .slick-arrow.slick-next{
+    right: 0px;
+}
+
+#step-2 .con > .card-slide > .card-name{
+    width: 38%;
+    height:120px;
+    background-image: url(img/bg-slide-name.png);
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3.5em;
+    color: #fff;
+    padding-bottom: 7px;
+    
+}
+
+
+
+#step-2 .con > div.comment{
+    margin-top : 100px;
+    
+}
+
+#step-2 .con > div.comment > div.text-box{
+    font-size: 1.6em;
+    margin-left: 10px;
 }
 
 /* step 2 end */
