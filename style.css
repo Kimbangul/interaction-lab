@@ -483,9 +483,21 @@ header > .con >  .sns-menu > li:last-child > a{
 
 /* step 1 end */
 /* step 2 start */
-section#step-2{
+#step-2{
     background-color: #FCF5DF;
 }
+
+#step-2 .section-title > .underline::before{
+    background-color: #FFCD5A;
+}
+
+#step-2 .con > .card-slide .card{
+    max-width: 33%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 75.8%;
+}
+
 /* step 2 end */
 
 /* section end */
