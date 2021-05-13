@@ -7,8 +7,13 @@ $(document).ready(function() {
             autoScrolling: true,
             navigation: true,
             navigationPosition: 'left',
-            navigationTooltips: ['MAIN', 'STEP 1', 'STEP 2'],
-            showActiveTooltip: true                 
+            navigationTooltips: ['MAIN', 'STEP 1', 'STEP 2', 'STEP 3', 'STEP 4'],
+            showActiveTooltip: true,
+            scrollOverflow: true,
+            afterLoad: function(anchorLink, index){
+                step3Animate_init(index);
+            }
+
         });
 
     }
@@ -44,16 +49,32 @@ $(document).ready(function() {
         });
     }
 
-    function insertText(){
-       
+    function step3Animate_init(index){  
+        console.log(index);  
+        if ($('#step-3').hasClass('active')){
+            console.log('true');
+            $(window).bind('mousewheel', function(e){
+                if(e.originalEvent.wheelDelta /120 > 0) {
+                  console.log(e.originalEvent.wheelDelta);
+ 
+                }
+                else{
+                  console.log(e.originalEvent.wheelDelta);
 
-        function cardNameChange(){
-            var currentSlideImg = document.querySelector('#step-2 .card-slide .slick-current > img')
-            var cardName = currentSlideImg.dataset['name'];
-            targetElem.innerHTML = cardName;
+                }
+              });
+            var currentPosition = parseInt($("#cat-balloon").css("top")); 
+            $(window).scroll(function() { 
+                var position = $(window).scrollTop(); 
+                console.log(position);
+                $("#cat-balloon").stop().animate({"top":position+currentPosition+"px"},1000); 
+            });
         }
 
+
     }
+   
+
 
     fullpage_init();
     slickSlide_init();
