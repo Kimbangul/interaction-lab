@@ -20,7 +20,9 @@ $(document).ready(function() {
     }
 
     function slickSlide_init(){
+        
         function step2Slide(){
+            // section step 2
             $('#step-2 .card-slide').slick({
                 slide: 'div.card',
                 infinite: true,                   
@@ -33,9 +35,9 @@ $(document).ready(function() {
                 centerMode: true,   
                 centerPadding: '33.3%',         
                 autoplaySpeed: 7000,
-                pauseOnHover: false,
+                pauseOnHover: true,
                 vertical: false,          
-                draggable: true
+                draggable: true,               
             });
     
             $('#step-2 .card-slide').on("afterChange",function(){
@@ -52,6 +54,10 @@ $(document).ready(function() {
         }
 
         function step4Slide(){
+
+
+
+            // section step 4
             $('#step-4 .slider').slick({
                 slide: 'div.section-slide',
                 infinite: true,                   
@@ -60,12 +66,33 @@ $(document).ready(function() {
                 prevArrow: "<button type='button' class='slick-prev'><img src='img/btn-slide-left.png' alt='이전 슬라이드로'></button>", // 이전 화살표 모양 설정
                 nextArrow: "<button type='button' class='slick-next'><img src='img/btn-slide-right.png' alt='다음 슬라이드로'></button>",
                 dots: false,
-                autoplay: false,    
+                autoplay: true,    
                 autoplaySpeed: 7000,
                 pauseOnHover: false,
                 vertical: false,          
                 draggable: true
             });
+            
+
+
+
+            function step4ProBar(){
+
+                function afterChange_init(){
+                    $('#step-4 .progress-bar-wrap > .bar-wrap > .bar').addClass('animated');
+                }
+
+                function beforeChange_init(){
+                    $('#step-4 .progress-bar-wrap > .bar-wrap > .bar').removeClass('animated');
+                }
+    
+                $('#step-4 .slider').on('afterChange', afterChange_init);
+    
+                $('#step-4 .slider').on('beforeChange', beforeChange_init);
+            }
+            step4ProBar();
+
+
         }
 
         step2Slide();
@@ -96,8 +123,7 @@ $(document).ready(function() {
                 }
               });        
         }
-        else{
-            console.log(index.index);
+        else{            
             $("#cat-balloon").css("top","20%");
         }
 
