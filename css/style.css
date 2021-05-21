@@ -175,6 +175,7 @@ img {
 .btn-red:hover{
     /* background-color: #FF2929; */
     color: #fff;
+    
 }
 
 .btn-red::before{
@@ -245,6 +246,14 @@ img {
     left: 50%;
     z-index: -1;
     transform: translateX(-50%) translateY(-50%);
+}
+
+.underline.yellow::before{
+    background: #FFCD5A;
+}
+
+.underline.small::before{
+    height: 12px;
 }
 
 .big {
@@ -393,10 +402,6 @@ header>.con>.sns-menu>li:last-child>a {
 div.comment>div.text-box {
     font-size: 1.4em;
     margin-left: 10px;
-}
-
-div.comment .underline::before{
-    height: 12px;
 }
 
 /* section start */
@@ -575,9 +580,6 @@ div.comment .underline::before{
     background-color: #FCF5DF;
 }
 
-#step-2 .section-title>.underline::before {
-    background-color: #FFCD5A;
-}
 
 #step-2 .con>.title-box {
     text-align: center;
@@ -712,9 +714,7 @@ div.comment .underline::before{
 }
 
 /* step 3 start */
-#step-3 .con > .title-box > .section-title > .underline::before{
-    background-color: #FFCD5A;
-}
+
 
 #step-3 .con > .bubble-wrap > .bubble{
     width: 33%;
@@ -809,10 +809,6 @@ div.comment .underline::before{
     transform: translateX(-50%);
 }
 
-#step-4 .con > .title-box > .section-title > .underline::before{
-    background-color: #FFCD5A;
-}
-
 #step-4 .con  > .slider{
     margin-bottom: 130px;
 }
@@ -848,9 +844,6 @@ div.comment .underline::before{
     margin-bottom: 30px;
 }
 
-#step-4 .con  > .slider .slide-wrap > .text-box > .slide-title > .underline::before{
-    background-color: #FFCD5A;
-}
 
 #step-4 .con  > .slider .slide-wrap > .text-box > p{
     font-size: 1.6em;
@@ -1152,5 +1145,118 @@ div.comment .underline::before{
 
 
 /* step 5 end */
+/* end start */
+#end {
+    background-image: url('../img/bg-decoration.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+#end .con > .egg{
+    width: 30%;
+    position: relative;
+    margin-top: 25%; 
+}
+
+#end .con>.egg>img {
+    /* egg image */
+    position: relative;
+    z-index: 3;
+    transform-origin: center bottom;
+}
+
+#end .con>.egg>img.egg-top{
+    position:absolute;
+    bottom: 37%;
+    left:0;
+    z-index: 0;
+    transition: bottom 0.7s 0s;
+}
+
+
+#end.active .con>.egg>img.egg-top{
+    bottom: 120%;
+    transition: bottom 0.7s 1s;
+}
+
+#end .con>.egg>img.egg-bottom.back{
+    position: absolute;
+    width: 90%;
+    top: 15px;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+
+#end .con>.egg>img.pichu{
+    position:absolute;
+    bottom: 0;
+    left:17%;
+    transform: translateX(-50%);
+    z-index: 1;    
+    opacity: 0;
+    transition: bottom 0.7s 0s, opacity 0.7s 0s;
+    transform-origin: 30% bottom;
+    animation: egg-shake 1s ease-in-out 0s infinite alternate;
+}
+
+#end.active .con>.egg>img.pichu{
+    bottom: 50px;
+    opacity: 1;
+    transition: bottom 0.7s 1.7s, opacity 0.7s 1.7s;
+}
+
+
+#end .con > .egg > .star{
+    position: absolute;
+    opacity: 0;
+    width: 23%;
+    transition: opacity, top , left, bottom , right;
+    transition-duration: 0.7s;
+    transition-delay: 0s;
+}
+
+#end.active .con > .egg > .star{
+    transition-delay: 2s;
+}
+
+#end.active .con > .egg > .star{
+    opacity: 1;
+}
+
+
+#end .con > .egg > .star.left{
+    top: -60%;
+    left: 10%;
+}
+
+#end.active .con > .egg > .star.left{
+    top: -120%;
+    left:-22%;
+}
+
+#end .con > .egg > .star.right{
+    bottom: 60%;
+    right: 10%;
+}
+
+#end.active .con > .egg > .star.right{
+    bottom: 0%;
+    right: -22%;
+}
+
+#end .con > .text-box{
+    margin-top: 50px;
+    font-size: 1.8em;
+    line-height: 1.2em;    
+}
+
+
+
+
+
+
+
+/*end end*/
 /* section end */

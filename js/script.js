@@ -8,7 +8,7 @@ $(document).ready(function () {
             autoScrolling: true,
             navigation: true,
             navigationPosition: 'left',
-            navigationTooltips: ['MAIN', 'STEP 1', 'STEP 2', 'STEP 3', 'STEP 4', 'STEP 4.5', 'STEP 5'],
+            navigationTooltips: ['MAIN', 'STEP 1', 'STEP 2', 'STEP 3', 'STEP 4', 'STEP 4.5', 'STEP 5', 'FOOTER'],
             showActiveTooltip: true,
             scrollOverflow: true,
             afterLoad: function (anchorLink, index) {
