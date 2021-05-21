@@ -419,7 +419,7 @@ div.comment>div.text-box {
 #main .con>.egg {
     width: 33%;
     position: relative;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
 }
 
 #main .con>.egg>img {
@@ -897,9 +897,10 @@ div.comment>div.text-box {
 
 /* step 4 end */
 /* step 4.5 start */
-#fp-nav ul li:nth-child(6){
+#fp-nav ul li:nth-child(6), #fp-nav ul li:last-child{
     display: none;
 }
+
 
 #step-4-5{
     padding: 100px 0;
@@ -1252,11 +1253,71 @@ div.comment>div.text-box {
     line-height: 1.2em;    
 }
 
-
-
-
-
-
-
 /*end end*/
+
+footer{ 
+    color: #FFCD5A;
+    background: #513535; 
+    position: relative; 
+}
+
+footer .con{
+    height: 200px;
+    padding: 50px 0;
+}
+
+footer .con>.logo img {
+    width: auto;
+    height: 50px;
+}
+
+footer .con>.logo:hover {
+    transform-origin: center bottom;
+    animation: egg-shake 0.3s ease-in-out 0s infinite alternate;
+}
+
+footer .con > .site{
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+
+footer .con > .site > li{
+    
+    position: relative;
+}
+
+footer .con > .site > li > a{
+    padding: 0 15px;
+}
+
+
+footer .con > .site > li::after{
+    display: inline-block;
+    content: "";
+    clear: both;
+    width:1px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    transform: translateX(50%) translateY(50%);
+    background-color: #FFCD5A;
+}
+
+footer .con > .site > li:first-child:after{
+    display: none;
+}
+
+footer .con > .top-btn{
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #372E2E;
+}
+
+footer .con > .top-btn > #top{
+
+}
+
 /* section end */
