@@ -44,10 +44,19 @@ $(document).ready(function () {
                 autoplay: false,
                 centerMode: true,
                 centerPadding: '33.3%',
-                autoplaySpeed: 7000,
+                autoplaySpeed: 5000,
                 pauseOnHover: true,
                 vertical: false,
                 draggable: true,
+                responsive: [
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            centerMode: false,
+                            autoplay: true
+                        }
+                    }
+                ]
             });
 
             $('#step-2 .card-slide').on("afterChange", function () {

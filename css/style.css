@@ -388,6 +388,7 @@ header>.con>.sns-menu>li:last-child>a {
 
 #fp-nav ul li a span {
     background-image: url(../img/icon-pokeball.png);
+    background-size: 100%;
 }
 
 #fp-nav ul li a.active span {
@@ -694,7 +695,8 @@ div.comment>div.text-box {
 
 #step-3 .con {
     height: 119.62vw !important;
-    padding: 160px 0;
+    padding-top: 160px;
+    padding-bottom: 160px;
 
 }
 
@@ -782,6 +784,10 @@ div.comment>div.text-box {
     background-image: url('../img/bg-step4.png');
     background-repeat: no-repeat;
     background-position: 120% 150%;
+}
+
+#step-4 .con{
+    margin-bottom: 200px;
 }
 
 #step-4 .con > .title-box{
@@ -1184,7 +1190,7 @@ div.comment>div.text-box {
 #end .con>.egg>img.egg-bottom.back{
     position: absolute;
     width: 90%;
-    top: 15px;
+    top: 3px;
     left: 50%;
     z-index: -1;
     transform: translateX(-50%);
@@ -1254,6 +1260,7 @@ div.comment>div.text-box {
 }
 
 /*end end*/
+/* footer start */
 
 footer{ 
     color: #FFCD5A;
@@ -1316,7 +1323,313 @@ footer .con > .top-btn{
     background-color: #372E2E;
 }
 
-footer .con > .top-btn > #top{
+/* footer end */
+
+@media screen and (max-width: 1279px){
+
+    .con{
+        padding: 0 50px;
+    }
+
+    #fp-nav.fp-left{
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #main .con > .egg{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 989px){
+
+
+
+    #main .con > .egg > .title-box > h1{
+        font-size: 3em;
+    }
+
+    #step-4 .con > .slider .slide-wrap >.img-box{
+        width: 280px;
+        height: 280px;
+    }
+
+}
+
+@media screen and (min-width: 770px){
+    #step-5 .fp-tableCell{
+        height: 100vh !important;
+    }
+}
+
+@media screen and (max-width: 769px){
+    /* .con{
+        padding: 0 25px;
+    } */
+
+    .comment img{
+        width: 10%;
+    }
+
+    div.comment>div.text-box{
+        font-size: 1.6em;
+    }
+
+    #fp-nav.fp-left{
+        left: 20px;
+    }
+
+    #main .con > .egg{
+        width: 50%;
+    }
+
+    #main .con > .egg > .title-box > h1{
+        font-size: 2.1em;
+    }
+
+    
+    #step-1 .con{
+        flex-direction: column;
+    }
+
+    #step-2 .con>.title-box{
+        margin-bottom: 20px;
+    }
+
+    #step-2 .con>.card-slide{
+        padding: 0 100px;
+    }
+
+    #step-2 .con>.card-slide>.card-name{
+        width: 70%;
+    }
+
+    #step-2 .con>div.comment{
+        margin-top: 50px;
+    }
+
+    #step-3 .con{
+        height: 239.24vw !important;
+    }
+
+    #step-3 .con::after{
+        background-size: 200% auto;
+        background-position: 61% 0%;
+    }
+
+    #step-3 .con > .bubble-wrap > .bubble{
+        width: 50%;
+        left: 52%;
+    }
+
+    #step-3 .con > .bubble-wrap > .bubble:nth-child(2n){
+        left: 34%;
+    }
+
+    #cat-balloon{
+        width: 25%;
+    }
+
+    #step-4 .con{
+        margin-bottom: 0;
+    }
+
+    #step-4 .section-slide .slide-wrap{
+        flex-direction: column;
+    }
+
+    
+
+    #step-4 .con > .slider .slide-wrap > .text-box{
+        width: auto;
+        text-align: center;
+        margin: 50px 0 0 0;
+
+    }
+
+    #step-4 .slick-prev, .slick-next {
+        top: 25%;
+    }
+
+    #step-4 .slick-arrow.slick-next{
+        right: 15%;
+    }
+
+    #step-4 .slick-arrow.slick-prev{
+        left: 15%;
+    }
+
+    #step-4 .con > .slider > .deco{
+        left: 90px;
+        bottom: 94%;
+    }
+
+    #step-4 .progress-bar-wrap{
+        bottom: -70px;
+    }
+
+    #step-4-5 .title-box{
+        transform: none;
+        position: static;
+        margin-bottom: 70px;
+    }
+
+    #step-4-5 .img-con > .row:nth-of-type(1) > .img-box:nth-child(1), #step-4-5 .img-con > .row:nth-of-type(1) > .img-box:nth-child(2){
+        width: auto;
+    }
+
+    #step-4-5 .img-con > .row:nth-of-type(2) > .img-box:nth-child(1), #step-4-5 .img-con > .row:nth-of-type(2) > .img-box:nth-child(2), #step-4-5 .img-con > .row:nth-of-type(2) > .img-box:nth-child(3){
+        width: auto;
+    }
+
+    #step-5 .con{
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    #step-5 .con > .card-con{
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    #step-5 .con > .card-con > .card{
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+
+    #step-5 .con > .card-con > .card::after{
+        padding-bottom: 35%;
+    }
+
+    #step-5 .con > .card-con > .card > .card-wrap{
+        display: flex;
+        align-items: center;
+    }
+
+    #step-5 .con > .card-con > .card .img-box{
+        width: 48%;
+        height: 100%;
+        border-radius: 50px 0 0 50px;
+    }
+
+    #step-5 .con > .card-con > .card .text-box{
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #step-5 .con > .comment{
+        margin-top: 20px;
+    }
+
+    #end .con > .egg{
+        width: 43%;
+        margin-top: 40%;
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+
+    .mb{
+        display: block;
+    }
+
+    .section-title{
+        font-size: 2.5rem;
+    }
+
+    .step-count{
+        font-size: 1.7rem;
+    }
+
+    .outline-yellow{
+        border: 16px solid #FFCD5A;
+    }
+
+    /* .comment img{
+        width: 25%;
+    } */
+
+    #fp-nav ul li{
+        width: 8px;
+        height: 8px;
+    }
+
+    #fp-nav ul li, .fp-slidesNav ul li{
+        margin: 15px 0;
+    }
+
+    #fp-nav ul li .fp-tooltip{
+        top: 1.5px;
+    }
+    
+    #fp-nav ul li .fp-tooltip.fp-left{
+        left: 20px;
+    }
+
+    #fp-nav ul li a span, .fp-slidesNav ul li a span{
+        width: 8px;
+        height: 8px;
+    }
+
+    #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
+        width: 8px;
+        height: 11px;
+    }
+
+
+    header >.con{
+        height: 50px;
+        padding: 0 20px;
+    }
+
+    header>.con>.logo img{
+        height: 25px;
+    }
+
+    header>.con>.sns-menu{
+        font-size: 1.5em;
+    }
+
+    header>.con>.sns-menu>li>a{
+        margin-right: 15px;
+    }
+
+    #main .con>.egg{
+        width: 70%;
+        margin-bottom: 15%;
+    }
+
+    #main .con > .egg > .title-box > h1{
+        font-size: 1.8em;
+        padding: 30px;
+    }
+
+    #step-1 .con>.text-box{
+        margin-right: 0;
+    }
+
+    /* #step-2 .con>.title-box{
+        margin-bottom: 20px;
+    }
+
+    #step-2 .con>.card-slide{
+        padding: 0 10px;
+    }
+
+    #step-2 .con>.card-slide>.card-name{
+        width: 100%;
+        font-size: 2.5em;
+    } */
+
+    /* #step-2 .con>div.comment{
+        margin-top: 30px;
+    } */
 
 }
 
