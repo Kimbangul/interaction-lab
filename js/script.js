@@ -124,6 +124,7 @@ $(document).ready(function () {
 
     function step3Animate_init(index) {
 
+        $("#cat-balloon").css("top", "20%")
         var balloonPositionFirst = $("#cat-balloon").css("top");
         if (index.index == 3) {
 
@@ -148,9 +149,7 @@ $(document).ready(function () {
 
                 }
             });
-        } else {
-            $("#cat-balloon").css("top", "20%");
-        }
+        } 
 
 
     }
