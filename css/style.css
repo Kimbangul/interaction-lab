@@ -103,6 +103,10 @@ img {
     display: none;
 }
 
+.mb-s{
+    display: none;
+}
+
 .con {
     width: 100%;
     max-width: 1280px;
@@ -243,15 +247,51 @@ img {
     content: "";
     display: block;
     clear: both;
-    width: 102%;
+    width: 102%;   
     height: 24px;
     background: #fff;
     border-radius: 12px;
     top: 80%;
     left: 50%;
     z-index: -1;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%) scaleX(0);
+    transition: transform 0.5s 0.5s;
+    transform-origin: left;
 }
+/* animation apply start */
+section.active .underline::before{
+    transform: translateX(-50%) translateY(-50%) scaleX(1);
+}
+
+section.active .metamong{
+    animation: rubberBand 1s ease-in-out 0.5s 1 normal;
+}
+
+#step-4-5.active .img-con{
+    animation: fadeIn 1s 0.3s both;
+    
+}
+
+#step-3.active .title-box{
+    animation: bounce 1s 0.3s both;
+}
+
+#step-5.active .con > .card-con > .card:first-child{
+    animation: bounceIn 0.5s 0.3s both;
+}
+
+#step-5.active .con > .card-con > .card:nth-child(2){
+    animation: bounceIn 0.5s 0.6s both;
+}
+
+#step-5.active .con > .card-con > .card:nth-child(3){
+    animation: bounceIn 0.5s 0.9s both;
+}
+
+
+
+
+/* animation apply end */
 
 .underline.yellow::before{
     background: #FFCD5A;
@@ -260,6 +300,8 @@ img {
 .underline.small::before{
     height: 12px;
 }
+
+
 
 .big {
     font-size: 1.2em;
@@ -428,7 +470,7 @@ div.comment>div.text-box {
 }
 
 #main .con>.egg {
-    width: 33%;
+    width: 30%;
     position: relative;
     margin-bottom: 7%;
 }
@@ -1173,7 +1215,7 @@ div.comment>div.text-box {
 }
 
 #end .con > .egg{
-    width: 30%;
+    width: 27%;
     position: relative;
     margin-top: 25%; 
 }
@@ -1793,6 +1835,10 @@ footer .con > .top-btn{
         width: 30%;
     }
 
+    #main .con>.scroll-down>.text-box{
+        margin-top: 0;
+    }
+
     #step-1 .con .img-wrap>.deco{
         right: -55px; 
     }
@@ -2010,7 +2056,7 @@ footer .con > .top-btn{
 
 @media screen and (max-width: 476px){
 
-    
+
 
     .section-title{
         font-size: 2.5rem;
@@ -2098,16 +2144,22 @@ footer .con > .top-btn{
         padding: 30px;
     }
 
+    #step-1 .step-count{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #step-1 .con .img-wrap{
+        margin-top: 30px;
+    }
+
     #step-1 .con>.text-box{
         margin-right: 0;
+        text-align: center;
     }
 
     #main .con>.scroll-down>svg{
         width: 25%;
-    }
-
-    #main .con>.scroll-down>.text-box{
-        margin-top: 0;
     }
 
     #step-4 .con > .slider{
@@ -2202,6 +2254,16 @@ footer .con > .top-btn{
     }
 
     
+}
+
+@media screen and (max-width: 400px){
+    .con{
+        padding: 0 20px;
+    }
+
+    .mb-s{
+        display: block;
+    }
 }
 
 @media screen and (max-width: 321px){

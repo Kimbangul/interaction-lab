@@ -17,8 +17,9 @@ $(document).ready(function () {
             }            
 
         });
-        function fullpageNav_fix(index) {
+        function fullpageNav_fix(index) {           
             if (index.index == 5) {
+                
                 $('#fp-nav ul li:nth-child(5) > a').addClass('active');
             }
             if ($('footer').hasClass('active')){
