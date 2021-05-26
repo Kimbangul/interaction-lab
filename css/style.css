@@ -97,6 +97,33 @@ img {
     }
 }
 
+@keyframes prev-btn {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes next-btn {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+/* @keyframes line-deco-ani{
+    0%{
+        transform: scaleX(0) inherit;
+    }
+    100%{
+        transform: scaleX(1) inherit;
+    }
+} */
+
 /* lib */
 
 .mb{
@@ -259,6 +286,15 @@ img {
     transform-origin: left;
 }
 /* animation apply start */
+
+.slick-next img{
+   animation: next-btn 0.7s ease-out infinite alternate both;
+}
+
+.slick-prev img{
+    animation: prev-btn 0.7s ease-out infinite alternate both; 
+}
+
 section.active .underline::before{
     transform: translateX(-50%) translateY(-50%) scaleX(1);
 }
@@ -287,6 +323,11 @@ section.active .metamong{
 #step-5.active .con > .card-con > .card:nth-child(3){
     animation: bounceIn 0.5s 0.9s both;
 }
+
+/* #step-1.active .con>.text-box>.line-deco, #step-4.active .con > .title-box::after, #step-4-5.active .title-box > .line-deco , #step-5.active .con > .title-box::after{
+    animation: line-deco-ani 1s ease-in-out 0.3s 1 both;
+} */
+
 
 
 
@@ -2197,25 +2238,6 @@ footer .con > .top-btn{
     }
     
 
-    
-    
-
-    /* #step-2 .con>.title-box{
-        margin-bottom: 20px;
-    }
-
-    #step-2 .con>.card-slide{
-        padding: 0 10px;
-    }
-
-    #step-2 .con>.card-slide>.card-name{
-        width: 100%;
-        font-size: 2.5em;
-    } */
-
-    /* #step-2 .con>div.comment{
-        margin-top: 30px;
-    } */
 
 }
 
