@@ -198,7 +198,7 @@ img {
 }
 
 .btn-red{
-    position: relative;
+    position: relaftive;
     font-size: 1.6em;
     padding: 15px 35px;
     border: 2px solid #FF2929;
@@ -1426,7 +1426,7 @@ footer .con > .top-btn{
     }
 }
 
-@media screen and (max-width: 1279px){
+@media screen and (max-width: 1280px){
 
     html,body{
         font-size: 9px;
