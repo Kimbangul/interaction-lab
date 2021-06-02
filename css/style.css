@@ -543,7 +543,7 @@ div.comment>div.text-box {
 }
 
 #main .con>.egg>.title-box {
-    width: 150%;
+   padding: 40%;
     background-image: url(../img/img-title-deco.png);
     background-size: contain;
     background-position: center center;
@@ -556,7 +556,6 @@ div.comment>div.text-box {
 }
 
 #main .con>.egg>.title-box>h1 {
-    padding: 100px;
     font-size: 3.4em;
     color: #fff;
     margin-bottom: 3%;
@@ -1009,7 +1008,7 @@ div.comment>div.text-box {
 
 
 #step-4-5{
-    padding: 100px 0;
+    /* padding: 100px 0; */
     background-color: #FFE48B;
     /* background-image: url('../img/bg-step-4-5.png'); */
 }
@@ -1454,6 +1453,16 @@ footer .con > .top-btn{
         width: 10%;
     }
 
+    #step-1 .con .img-wrap>.deco{
+        right: -50px;
+    }
+
+    #step-1 .con .img-wrap>.metamong{
+        width: 30%;
+        left: -10%;
+        bottom: -10%;
+    }
+
     #step-4-5 .title-box{
         right: 30px;
     }
@@ -1495,6 +1504,14 @@ footer .con > .top-btn{
         height: 18px;
     }
 
+    #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span{
+        width: 15px;
+        height: 15px;
+    }
+
+    #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
+        width: 15px;
+        height: 18px;}
 
 }
 
@@ -1530,11 +1547,7 @@ footer .con > .top-btn{
         margin-right: 60px;
     }
 
-    #step-1 .con .img-wrap>.metamong{
-        width: 30%;
-        left: -10%;
-        bottom: -10%;
-    }
+
 
     #step-1 .con .img-wrap>.deco{
         right: -40px;
@@ -1560,8 +1573,14 @@ footer .con > .top-btn{
 
 
     #main .con > .egg > .title-box > h1{
-        font-size: 3em;
-    }
+        font-size: 2.6em;
+        }
+
+
+
+        #step-2 .con>.card-slide>.card-name{
+            font-size: 2.7em;
+        }
 
     #step-4 .con > .slider .slide-wrap >.img-box{
         width: 280px;
@@ -1578,6 +1597,70 @@ footer .con > .top-btn{
  html,body{
      font-size: 8px;
  }
+}
+
+@media (min-width: 770px) and (max-width: 1280px){
+
+    #main .con>.egg{
+        width: 28%;
+    }
+    #main .con > .egg > .title-box > h1{
+        padding: 0;
+    }
+
+    #step-1 .con > .text-box{
+        margin-right: 70px;
+    }
+
+    #step-2 .con>.title-box{
+        margin-bottom: 30px;
+    }
+
+    #step-2 .con>.card-slide{
+        /* width: 90%;
+        margin: 0 auto; */
+    }
+
+    #step-2 .con>div.comment{
+        margin-top: 40px;
+    }
+
+    #step-4 .con{
+        margin-bottom: 100px;
+    }
+
+    #step-4 .con > .title-box{
+        margin-bottom: 30px;
+    }
+
+    #step-4 .con > .title-box::after{
+        bottom: -15px;
+    }
+
+    #step-4 .con > .slider{
+        margin-bottom: 50px;
+    }
+
+    #step-5 .con > .card-con{
+        margin-top: 70px;
+        padding: 0 100px;
+    }
+
+    #step-5 .con > .comment{
+        margin-top: 30px;
+    }
+
+    #end .con > .egg{
+        width: 23%;
+        margin-top:23%;
+    }
+
+
+    #end .con > .text-box{
+        margin-top: 30px;
+    }
+    
+
 }
 
 @media (min-width: 770px){
@@ -1953,6 +2036,9 @@ footer .con > .top-btn{
         width: 55%;
         font-size: 6.5px;
     }
+    #main .con>.egg>.title-box{
+        padding: 20%;
+    }
 
     #main .con>.egg>.title-box>h1{
         padding: 20px;
@@ -1961,6 +2047,8 @@ footer .con > .top-btn{
     #step-3 .con > .balloon{
         display: none;
     }
+
+    
 }
 
 @media (max-width: 551px){

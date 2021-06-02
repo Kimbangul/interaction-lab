@@ -45,7 +45,7 @@ $(document).ready(function () {
                 autoplay: false,
                 centerMode: true,
                 centerPadding: '33.3%',
-                autoplaySpeed: 5000,
+
                 pauseOnHover: true,
                 vertical: false,
                 draggable: true,
@@ -54,7 +54,8 @@ $(document).ready(function () {
                         breakpoint: 769,
                         settings: {
                             centerMode: false,
-                            autoplay: true
+                            autoplay: true,
+                            autoplaySpeed: 5000
                         }
                     }
                 ]
