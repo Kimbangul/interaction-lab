@@ -1463,6 +1463,10 @@ footer .con > .top-btn{
         bottom: -10%;
     }
 
+    #step-3 .con > .balloon{
+        width: 15%;
+    }
+
     #step-4-5 .title-box{
         right: 30px;
     }
@@ -1831,7 +1835,7 @@ footer .con > .top-btn{
     }
 
     #step-3 .con > .balloon{
-        width: 25%;
+        width: 20%;
         right: 3%;
     }
 

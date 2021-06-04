@@ -128,12 +128,19 @@ $(document).ready(function () {
 
         $("#cat-balloon").css("top", "20%")
         var balloonPositionFirst = $("#cat-balloon").css("top");
+
+
         if (index.index == 3) {
 
             $(window).bind('mousewheel', function (e) {
 
                 var currentPosition = parseInt($("#cat-balloon").css("top"));
-                var scrollDistance = 250;
+                // var scrollDistance = 250;
+                var step3Height = $("#step-3 .con").outerHeight();
+                var scrollDistance = step3Height *0.17;
+
+                console.log(currentPosition + scrollDistance);
+                console.log($("#step-3  .con" ).outerHeight());
 
                 if (e.originalEvent.wheelDelta / 120 > 0) {
                     if (parseInt(currentPosition - scrollDistance) >= parseInt(balloonPositionFirst)) {
@@ -141,11 +148,21 @@ $(document).ready(function () {
                             "top": currentPosition - scrollDistance + "px"
                         }, 1000);
                     }
+                    else{
+                        $("#cat-balloon").stop().animate({
+                            "top": "20%"
+                        }, 1000);
+                    }
                 } else {
                     // scroll down                   
-                    if (parseInt(currentPosition + scrollDistance) <= parseInt(balloonPositionFirst) + parseInt(scrollDistance * 3)) {
+                    if (parseInt(currentPosition + scrollDistance) <=  step3Height *0.74) {
                         $("#cat-balloon").stop().animate({
                             "top": currentPosition + scrollDistance + "px"
+                        }, 1000);
+                    }
+                    else{
+                        $("#cat-balloon").stop().animate({
+                            "top": "74%"
                         }, 1000);
                     }
 
