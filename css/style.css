@@ -115,14 +115,34 @@ img {
     }
 }
 
-/* @keyframes line-deco-ani{
-    0%{
-        transform: scaleX(0) inherit;
-    }
-    100%{
-        transform: scaleX(1) inherit;
-    }
-} */
+@keyframes loader10g{
+    0%{background-color: rgba(255, 255, 255, .2);}
+    25%{background-color: rgba(255, 255, 255, 1);}
+    50%{background-color: rgba(255, 255, 255, .2);}
+    75%{background-color: rgba(255, 255, 255, .2);}
+    100%{background-color: rgba(255, 255, 255, .2);}
+  }
+  
+  @keyframes loader10m{
+    0%{background-color: rgba(255, 255, 255, .2);}
+    25%{background-color: rgba(255, 255, 255, .2);}
+    50%{background-color: rgba(255, 255, 255, 1);}
+    75%{background-color: rgba(255, 255, 255, .2);}
+    100%{background-color: rgba(255, 255, 255, .2);}
+  }
+
+  @keyframes loader10d{
+    0%{background-color: rgba(255, 255, 255, .2);}
+    25%{background-color: rgba(255, 255, 255, .2);}
+    50%{background-color: rgba(255, 255, 255, .2);}
+    75%{background-color: rgba(255, 255, 255, 1);}
+    100%{background-color: rgba(255, 255, 255, .2);}
+  }
+
+  @keyframes loader1{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
 
 /* lib */
 
@@ -209,7 +229,6 @@ img {
 }
 
 .btn-red:hover{
-    /* background-color: #FF2929; */
     color: #fff;
     
 }
@@ -324,12 +343,6 @@ section.active .metamong{
     animation: bounceIn 0.5s 0.9s backwards;
 }
 
-/* #step-1.active .con>.text-box>.line-deco, #step-4.active .con > .title-box::after, #step-4-5.active .title-box > .line-deco , #step-5.active .con > .title-box::after{
-    animation: line-deco-ani 1s ease-in-out 0.3s 1 both;
-} */
-
-
-
 
 
 /* animation apply end */
@@ -370,6 +383,101 @@ section.active .metamong{
 .slick-slide {
     height: inherit !important;
 }
+
+/* loader */
+/* #loading{
+    position: fixed;
+    z-index:9999;
+    top:0;
+    left: 0;
+    width: 100vw;   
+    height: 100vh;
+    background: #FFCD5A;
+    opacity: 1;
+    animation: opacity 0.7s, visbility 0.7s 0.7s ;
+}
+
+#loading.hidden{
+    opacity: 0;
+  
+}
+
+#loading  .loader-wrap{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+#loading  .loader-wrap::after{
+    content:"LOADING";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+#loading .loader{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    border: 3px solid  rgba(255,255,255, 0.7);
+    top: calc(50% - 40px);
+    margin: 0 auto;
+        transform-origin: 50% 50%;
+        animation: loader1 3s linear infinite;
+  } 
+  
+  #loading .loader:after{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+   */
+
+/* 
+#loading .loader{
+    position: relative;
+  width: 12px;
+  height: 12px;
+  top: 46%;
+  left: 46%;
+  border-radius: 12px;
+     animation: loader10m 3s ease-in-out infinite;
+}
+
+#loading .loader::before{
+    content: "";
+  position: absolute;
+  top: 0px;
+  left: -25px;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  -webkit-animation: loader10g 3s ease-in-out infinite;
+      animation: loader10g 3s ease-in-out infinite;
+}
+
+#loading .loader::after{
+    content: "";
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  -webkit-animation: loader10d 3s ease-in-out infinite;
+      animation: loader10d 3s ease-in-out infinite;
+} */
 
 /* header start */
 header {
@@ -597,7 +705,6 @@ div.comment>div.text-box {
     padding: 120px 0;
     position: relative;
     overflow-y: visible;
-    /* padding: 50px 0 50px 0; */
     background-color: #FFE48B;
 
 
@@ -618,7 +725,6 @@ div.comment>div.text-box {
 
 #step-1::before {
     /* bg deco top */
-
     bottom: 99%;
     background-image: url(../img/bg-step1-top.png);
 
@@ -630,7 +736,6 @@ div.comment>div.text-box {
     top: 99%;
     background-image: url(../img/bg-step1-top.png);
     transform: rotate(180deg);
-
 
 }
 
@@ -666,7 +771,6 @@ div.comment>div.text-box {
 }
 
 
-
 /* step 1 end */
 /* step 2 start */
 #step-2 {
@@ -698,8 +802,6 @@ div.comment>div.text-box {
     align-items: center;
     transition: transform 0.3s, opacity 0.3s;
     overflow: visible;
-
-
 }
 
 #step-2 .con>.card-slide .card.slick-active {
@@ -708,9 +810,7 @@ div.comment>div.text-box {
 }
 
 #step-2 .con>.card-slide .card>img {
-
     width: 80%;
-
 }
 
 #step-2 .con>.card-slide .card>img[alt="pokedex"] {
@@ -766,14 +866,11 @@ div.comment>div.text-box {
     color: #fff;
     padding-bottom: 7px;
     z-index: 5;
-
 }
-
 
 
 #step-2 .con>div.comment {
     margin-top: 100px;
-
 }
 
 
@@ -1233,11 +1330,6 @@ div.comment>div.text-box {
     transform: scale(0.9);
 }
 
-/* #step-5 .con > .card-con > .card:last-child .img-box > img{
-   transform: scale(1.2);
-} */
-
-
 #step-5 .con > .card-con > .card .text-box{
     padding: 20px;
     font-size: 1.6em;
@@ -1620,11 +1712,6 @@ footer .con > .top-btn{
         margin-bottom: 30px;
     }
 
-    #step-2 .con>.card-slide{
-        /* width: 90%;
-        margin: 0 auto; */
-    }
-
     #step-2 .con>div.comment{
         margin-top: 40px;
     }
@@ -1677,14 +1764,6 @@ footer .con > .top-btn{
 }
 
 @media (max-width: 769px){
-
-    /* html,body{
-        font-size: 9px;
-    } */
-    /* .con{
-        padding: 0 25px;
-    } */
-
     .mb{
         display: block;
     }
@@ -1759,10 +1838,6 @@ footer .con > .top-btn{
     #main .con > .egg{
         width: 50%;
     }
-
-    /* #main .con > .egg > .title-box > h1{
-        font-size: 2.1em;
-    } */
 
     header>.con>.logo img{
         height: 40px;
@@ -2112,11 +2187,6 @@ footer .con > .top-btn{
         font-size: 1.4em;
     }
 
-
-    /* #step-4-5::before, #step-4-5::after{
-        display: none;
-    } */
-
     #step-4-5 .title-box{
         height: 35px;
     }
@@ -2225,10 +2295,6 @@ footer .con > .top-btn{
         height: 6px;
         width: 100%;
     }
-
-    /* .comment img{
-        width: 25%;
-    } */
 
     #fp-nav ul li{
         width: 8px;

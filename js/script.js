@@ -1,5 +1,12 @@
 $(document).ready(function () {
     
+    // function loadingPage_init(){
+    //     // var loadingPage = document.querySelector('#loading');
+    //     var loadingPage =  $('#loading');
+    //     loadingPage.addClass('hidden');
+    // }
+
+    // loadingPage_init();
 
     function fullpage_init() {
         $('#wrap').fullpage({
