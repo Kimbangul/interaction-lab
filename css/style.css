@@ -249,25 +249,6 @@ img, .title-box{
     background-color: #FF2929;;
 }
 
-/* .btn-red::before{
-    content: "";
-    display: block;
-    clear: both;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    opacity: 0;    
-    background-color: #FF2929;
-    transition: width 0.3s, opacity 0.3s;
-} */
-
-/* .btn-red:hover::before{
-    width: 100%;
-    opacity: 1;
-} */
 
 .outline-yellow {
     border: 25px solid #FFCD5A;
