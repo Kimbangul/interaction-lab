@@ -27,6 +27,12 @@
     color: inherit;
     list-style: none;
     box-sizing: border-box;
+    
+}
+
+*::selection{
+    background: #513535;
+    color: #FFCD5A;
 }
 
 html,
@@ -40,9 +46,19 @@ body {
     background-color: #FFCD5A;
 }
 
+
+
 a,
 img {
     display: block;
+}
+
+img, .title-box{
+    user-select: none;
+}
+
+.slick-slide {
+    outline : none;
 }
 
 /* animation */
@@ -230,10 +246,10 @@ img {
 
 .btn-red:hover{
     color: #fff;
-    
+    background-color: #FF2929;;
 }
 
-.btn-red::before{
+/* .btn-red::before{
     content: "";
     display: block;
     clear: both;
@@ -246,12 +262,12 @@ img {
     opacity: 0;    
     background-color: #FF2929;
     transition: width 0.3s, opacity 0.3s;
-}
+} */
 
-.btn-red:hover::before{
+/* .btn-red:hover::before{
     width: 100%;
     opacity: 1;
-}
+} */
 
 .outline-yellow {
     border: 25px solid #FFCD5A;
@@ -696,6 +712,7 @@ div.comment>div.text-box {
     margin-top: 8px;
     font-size: 1.2em;
     font-weight: 700;
+    user-select: none;
 }
 
 /* main end */
