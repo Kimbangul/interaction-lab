@@ -1,13 +1,5 @@
 $(document).ready(function () {
     
-    // function loadingPage_init(){
-    //     // var loadingPage = document.querySelector('#loading');
-    //     var loadingPage =  $('#loading');
-    //     loadingPage.addClass('hidden');
-    // }
-
-    // loadingPage_init();
-
     function fullpage_init() {
         $('#wrap').fullpage({
             //options here
@@ -142,12 +134,8 @@ $(document).ready(function () {
             $(window).bind('mousewheel', function (e) {
 
                 var currentPosition = parseInt($("#cat-balloon").css("top"));
-                // var scrollDistance = 250;
                 var step3Height = $("#step-3 .con").outerHeight();
                 var scrollDistance = step3Height *0.17;
-
-                console.log(currentPosition + scrollDistance);
-                console.log($("#step-3  .con" ).outerHeight());
 
                 if (e.originalEvent.wheelDelta / 120 > 0) {
                     if (parseInt(currentPosition - scrollDistance) >= parseInt(balloonPositionFirst)) {
@@ -183,8 +171,7 @@ $(document).ready(function () {
     function step4Animate_init(){
         var card = $('#step-5 .card');
         card.hover(
-            function(){
-                // console.log($(this).siblings('.card'));
+            function(){               
                 $(this).siblings('.card').addClass('focus-out');
             },
             function(){
