@@ -733,6 +733,10 @@ div.comment>div.text-box {
     background-color: #FCF5DF;
 }
 
+#step-2 .con .slick-list{
+    overflow-x: hidden;
+    overflow-y: visible;
+}
 
 #step-2 .con>.title-box {
     text-align: center;
@@ -770,14 +774,14 @@ div.comment>div.text-box {
 }
 
 #step-2 .con>.card-slide .card>img[alt="pokedex"] {
-    transform: translateY(10px);
+    transform: scale(0.9);
 }
 
 #step-2 .con>.card-slide .card>.card-num {
     font-size: 5em;
     font-family: 'MaplestoryOTFBold', sans-serif;
     position: absolute;
-    top: -2.5%;
+    top: -6%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 6;
@@ -1328,10 +1332,11 @@ div.comment>div.text-box {
 
 #end .con>.egg>img.egg-top {
     position: absolute;
-    bottom: 37%;
+    bottom: 50%;
     left: 0;
     z-index: 0;
     transition: bottom 0.7s 0s;
+    transform: scale(0.96) translateX(-7px);
 }
 
 
@@ -1343,7 +1348,7 @@ div.comment>div.text-box {
 #end .con>.egg>img.egg-bottom.back {
     position: absolute;
     width: 90%;
-    top: 3px;
+    top: -6px;
     left: 50%;
     z-index: -1;
     transform: translateX(-50%);
