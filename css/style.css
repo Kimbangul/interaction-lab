@@ -304,7 +304,7 @@ img,
 
 
 .outline-yellow {
-    border: 25px solid #FFCD5A;
+    border: 15px solid #FFCD5A;
     border-radius: 50px;
     overflow: hidden;
 }
@@ -318,7 +318,7 @@ img,
 }
 
 .section-title {
-    font-size: 4.5rem;
+    font-size: 3.6rem;
 }
 
 .section-title:not(.underline) {
@@ -344,7 +344,7 @@ img,
     display: block;
     clear: both;
     width: 102%;
-    height: 24px;
+    height: 10px;
     background: #fff;
     border-radius: 12px;
     top: 80%;
@@ -559,6 +559,8 @@ header>.con>.sns-menu>li:last-child>a {
 div.comment>div.text-box {
     font-size: 1.5em;
     margin-left: 10px;
+    max-width: 60%;
+    text-align: justify;
 }
 
 /* section start */
@@ -582,6 +584,8 @@ div.comment>div.text-box {
 #main .con>.egg>img {
     /* egg image */
     position: relative;
+    margin: 0 auto;
+    width: 90%;
     z-index: 1;
     transform-origin: center bottom;
     animation: egg-shake 0.8s ease-in-out 0s infinite alternate;
@@ -734,7 +738,7 @@ div.comment>div.text-box {
 }
 
 #step-2 .con .slick-list{
-    overflow-x: hidden;
+    overflow-x: clip;
     overflow-y: visible;
 }
 
@@ -754,7 +758,7 @@ div.comment>div.text-box {
 
 #step-2 .con>.card-slide .card {
     margin: 0 5px;
-    opacity: 0.5;
+    opacity: 0.6;
     padding: 25px 0;
     transform: scale(0.75);
     display: flex;
@@ -781,7 +785,7 @@ div.comment>div.text-box {
     font-size: 5em;
     font-family: 'MaplestoryOTFBold', sans-serif;
     position: absolute;
-    top: -6%;
+    top: -10%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 6;
@@ -913,7 +917,7 @@ div.comment>div.text-box {
 
 #step-3 .con>.bubble-wrap>.bubble>.img-box>.text-box>.list-num {
     position: absolute;
-    top: 5%;
+    top: -10%;
     right: 5%;
     font-size: 3em;
     transform: translateX(-50%) translateY(-50%);
@@ -950,10 +954,10 @@ div.comment>div.text-box {
     display: block;
     clear: both;
     position: absolute;
-    bottom: -30px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 110px;
+    width: 40px;
     height: 2px;
     background-color: #513535;
     opacity: 0.5;
@@ -992,7 +996,7 @@ div.comment>div.text-box {
 
 #step-4 .con>.slider>.deco {
     position: absolute;
-    left: 40px;
+    left: 70px;
     bottom: 90%;
 }
 
@@ -1207,10 +1211,10 @@ div.comment>div.text-box {
     display: block;
     clear: both;
     position: absolute;
-    bottom: -30px;
+    bottom: -20px;
     left: 0;
     transform: translateX(5px);
-    width: 70px;
+    width: 40px;
     height: 2px;
     background-color: #513535;
     opacity: 0.5;
@@ -1265,7 +1269,7 @@ div.comment>div.text-box {
     font-size: 4em;
     font-family: 'MaplestoryOTFBold', sans-serif;
     position: absolute;
-    top: 0%;
+    top: -7%;
     left: 50%;
     z-index: 6;
     transform: translateX(-50%) translateY(-50%);
@@ -1348,8 +1352,8 @@ div.comment>div.text-box {
 #end .con>.egg>img.egg-bottom.back {
     position: absolute;
     width: 90%;
-    top: -6px;
-    left: 50%;
+    top: 2px;
+    left: 47%;
     z-index: -1;
     transform: translateX(-50%);
 }
@@ -1412,7 +1416,7 @@ div.comment>div.text-box {
 }
 
 #end .con>.text-box {
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 1.6em;
     line-height: 1.7em;
 }
@@ -1493,7 +1497,7 @@ footer .con>.top-btn {
 
     html,
     body {
-        font-size: 9px;
+        font-size: 8px;
     }
 
     .con {
@@ -1522,6 +1526,11 @@ footer .con>.top-btn {
         width: 15%;
     }
 
+    #step-4 .con>.slider .slide-wrap>.img-box{
+        width: 280px;
+        height: 280px;
+    }
+
     #step-4-5 .title-box {
         right: 30px;
     }
@@ -1530,10 +1539,17 @@ footer .con>.top-btn {
         height: 12px;
     }
 
+    #step-5 .con>.title-box::after{
+        bottom: -20px;
+    }
 
     #step-5 .con>.card-con>.card {
         width: 30%;
-        margin-right: 35px;
+        margin-right: 20px;
+    }
+
+    #step-5 .con>.card-con>.card .text-box{
+        padding: 10px;
     }
 
     #fp-nav ul li {
@@ -1721,7 +1737,9 @@ footer .con>.top-btn {
         width: 23%;
         margin-top: 23%;
     }
-
+    #end .con>.egg>img.egg-top{
+        transform: scale(0.96) translateX(-4px);
+    }
 
     #end .con>.text-box {
         margin-top: 30px;
@@ -1821,6 +1839,10 @@ footer .con>.top-btn {
         width: 50%;
     }
 
+    #main .con>.egg>img{
+        width: 75%;
+    }
+
     header>.con>.logo img {
         height: 40px;
     }
@@ -1850,7 +1872,7 @@ footer .con>.top-btn {
 
 
     #step-2 .con>.title-box {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     #step-2 .con>.card-slide {
@@ -2009,6 +2031,10 @@ footer .con>.top-btn {
         margin-top: 40%;
     }
 
+    #end .con>.egg>img.egg-top{
+        transform: scale(0.96) translateX(-3px);
+    }
+
     footer .con>.top-btn {
         display: none;
     }
@@ -2044,6 +2070,10 @@ footer .con>.top-btn {
 
     #step-1 .con>.text-box>.text-content {
         font-size: 1.4em;
+    }
+
+    #step-2 .con>.card-slide .card>.card-num{
+        font-size: 3em;
     }
 
     #step-3 .con {
@@ -2140,7 +2170,7 @@ footer .con>.top-btn {
     }
 
     #step-2 .con>.card-slide {
-        padding: 0 30px;
+        padding: 0 50px;
     }
 
     #step-2 .con>.card-slide>.card-name {
@@ -2203,6 +2233,9 @@ footer .con>.top-btn {
         font-size: 2.3em;
     }
 
+
+    #step-4-5 .img-con>.row:nth-of-type(1)>.img-box:nth-child(1), 
+    #step-4-5 .img-con>.row:nth-of-type(1)>.img-box:nth-child(2),
     #step-4-5 .img-con>.row:nth-of-type(2)>.img-box:nth-child(1),
     #step-4-5 .img-con>.row:nth-of-type(2)>.img-box:nth-child(2),
     #step-4-5 .img-con>.row:nth-of-type(2)>.img-box:nth-child(3) {
@@ -2276,7 +2309,8 @@ footer .con>.top-btn {
     }
 
     .outline-yellow {
-        border: 16px solid #FFCD5A;
+        border: 8px solid #FFCD5A;
+        border-radius: 25px;
     }
 
     .underline::before {
